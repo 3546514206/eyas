@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram id="demo1.eyas" desc="交易示例">
+  <nodes>
+    <node id="58033c00-c654-4b02-8050-7e50b922da8e" xPos="450" yPos="140" Width="50" Height="50">
+      <desc>吃饭</desc>
+      <beanId>emptyOperation</beanId>
+      <data-map>
+        <data key="*required" expr="" desc="必需项检查"/>
+      </data-map>
+    </node>
+    <node id="a088f408-90f3-4772-b25f-9479cdd88ae3" xPos="450" yPos="240" Width="180" Height="40">
+      <desc>喝水</desc>
+      <beanId>emptyOperation</beanId>
+      <data-map>
+        <data key="*required" expr="" desc="必需项检查"/>
+      </data-map>
+    </node>
+    <node id="32be2b5f-9ba7-47b3-9af5-930f48e21b56" xPos="450" yPos="340" Width="180" Height="40">
+      <desc>睡觉</desc>
+      <beanId>emptyOperation</beanId>
+      <data-map>
+        <data key="*required" expr="" desc="必需项检查"/>
+      </data-map>
+    </node>
+  </nodes>
+  <lines>
+    <line desc="线条1" condition="" from="58033c00-c654-4b02-8050-7e50b922da8e" to="a088f408-90f3-4772-b25f-9479cdd88ae3"/>
+    <line desc="线条2" condition="" from="a088f408-90f3-4772-b25f-9479cdd88ae3" to="32be2b5f-9ba7-47b3-9af5-930f48e21b56"/>
+  </lines>
+</diagram>

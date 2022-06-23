@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram id="demo2.eyas" desc="交易示例">
+  <nodes>
+    <node id="e4691397-1a5d-4871-87ad-afd88287f1b3" xPos="580" yPos="90" Width="180" Height="40">
+      <desc>开始</desc>
+      <beanId>startOperation</beanId>
+      <data-map>
+        <data key="*required" expr="" desc="必需项检查"/>
+      </data-map>
+    </node>
+    <node id="207e2eca-e60e-42ab-9111-bb8532d22396" xPos="580" yPos="210" Width="180" Height="40">
+      <desc>判断年龄</desc>
+      <type>condition</type>
+      <beanId>predicateAgeOperation</beanId>
+      <data-map>
+        <data key="*required" expr="" desc="必需项检查"/>
+      </data-map>
+    </node>
+    <node id="c0bde25f-6cb0-4fa4-8f71-18051dd2d763" xPos="390" yPos="340" Width="180" Height="40">
+      <desc>工作</desc>
+      <beanId>workingOperation</beanId>
+      <data-map>
+        <data key="*required" expr="" desc="必需项检查"/>
+      </data-map>
+    </node>
+    <node id="73617f06-fced-4506-9796-309528ca7d54" xPos="760" yPos="340" Width="180" Height="40">
+      <desc>学习</desc>
+      <beanId>learningOperation</beanId>
+      <data-map>
+        <data key="*required" expr="" desc="必需项检查"/>
+      </data-map>
+    </node>
+    <node id="f5bb51df-310f-4167-a4f6-a9b2abfe1187" xPos="580" yPos="470" Width="180" Height="40">
+      <desc>结束</desc>
+      <beanId>endOperation</beanId>
+      <data-map>
+        <data key="*required" expr="" desc="必需项检查"/>
+      </data-map>
+    </node>
+  </nodes>
+  <lines>
+    <line desc="" condition="" from="e4691397-1a5d-4871-87ad-afd88287f1b3" to="207e2eca-e60e-42ab-9111-bb8532d22396"/>
+    <line desc="年龄大于22" condition="${ age gt 22 }" from="207e2eca-e60e-42ab-9111-bb8532d22396" to="c0bde25f-6cb0-4fa4-8f71-18051dd2d763"/>
+    <line desc="年龄小于22" condition="${ age lt 22 }" from="207e2eca-e60e-42ab-9111-bb8532d22396" to="73617f06-fced-4506-9796-309528ca7d54"/>
+    <line desc="" condition="" from="c0bde25f-6cb0-4fa4-8f71-18051dd2d763" to="f5bb51df-310f-4167-a4f6-a9b2abfe1187"/>
+    <line desc="" condition="" from="73617f06-fced-4506-9796-309528ca7d54" to="f5bb51df-310f-4167-a4f6-a9b2abfe1187"/>
+  </lines>
+</diagram>
