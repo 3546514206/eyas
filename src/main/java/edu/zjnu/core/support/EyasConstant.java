@@ -9,7 +9,7 @@ public class EyasConstant {
 
     public static final String BLANK = "";
 
-    public static final String FLOW_FILE_SUFFIX = ".eyas";
+    public static final String FLOW_FILE_SUFFIX = ".eyas.xml";
 
     public static final String PROPERTIES_CONFIG_LOCATION = "eyas.properties";
 
